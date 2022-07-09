@@ -44,6 +44,11 @@ namespace Special_KeyCoder
             this.видToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scrollbarsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.примерыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.русскийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.中文ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.françaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
@@ -56,7 +61,6 @@ namespace Special_KeyCoder
             this.fastColoredTextBox1 = new FastColoredTextBoxNS.FastColoredTextBox();
             this.documentMap1 = new FastColoredTextBoxNS.DocumentMap();
             this.autocompleteMenu1 = new AutocompleteMenuNS.AutocompleteMenu();
-            this.laToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -81,8 +85,8 @@ namespace Special_KeyCoder
             this.laToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1016, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(762, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -94,7 +98,7 @@ namespace Special_KeyCoder
             this.saveAsToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.fileToolStripMenuItem.Text = "[file]";
             // 
             // openToolStripMenuItem
@@ -103,7 +107,7 @@ namespace Special_KeyCoder
             this.openToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.openToolStripMenuItem.Text = "[fileOpen]";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -113,7 +117,7 @@ namespace Special_KeyCoder
             this.saveToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.saveToolStripMenuItem.Text = "[fileSave]";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -124,7 +128,7 @@ namespace Special_KeyCoder
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.S)));
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.saveAsToolStripMenuItem.Text = "[fileSaveAs]";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -136,7 +140,7 @@ namespace Special_KeyCoder
             this.peToolStripMenuItem});
             this.runToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.runToolStripMenuItem.Name = "runToolStripMenuItem";
-            this.runToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
+            this.runToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.runToolStripMenuItem.Text = "[run]";
             // 
             // runConsoleToolStripMenuItem
@@ -144,7 +148,7 @@ namespace Special_KeyCoder
             this.runConsoleToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.runConsoleToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.runConsoleToolStripMenuItem.Name = "runConsoleToolStripMenuItem";
-            this.runConsoleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.runConsoleToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.runConsoleToolStripMenuItem.Text = "[runConsole]";
             this.runConsoleToolStripMenuItem.Click += new System.EventHandler(this.runConsoleToolStripMenuItem_Click);
             // 
@@ -154,7 +158,7 @@ namespace Special_KeyCoder
             this.peToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.peToolStripMenuItem.Name = "peToolStripMenuItem";
             this.peToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.peToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.peToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.peToolStripMenuItem.Text = "[runCompiling]";
             this.peToolStripMenuItem.Click += new System.EventHandler(this.peToolStripMenuItem_Click);
             // 
@@ -162,7 +166,7 @@ namespace Special_KeyCoder
             // 
             this.документацияToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.документацияToolStripMenuItem.Name = "документацияToolStripMenuItem";
-            this.документацияToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.документацияToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.документацияToolStripMenuItem.Text = "[docs]";
             this.документацияToolStripMenuItem.Click += new System.EventHandler(this.документацияToolStripMenuItem_Click);
             // 
@@ -170,7 +174,7 @@ namespace Special_KeyCoder
             // 
             this.отчётToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.отчётToolStripMenuItem.Name = "отчётToolStripMenuItem";
-            this.отчётToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.отчётToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.отчётToolStripMenuItem.Text = "[report]";
             this.отчётToolStripMenuItem.Click += new System.EventHandler(this.отчётToolStripMenuItem_Click);
             // 
@@ -180,7 +184,7 @@ namespace Special_KeyCoder
             this.scrollbarsToolStripMenuItem});
             this.видToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.видToolStripMenuItem.Name = "видToolStripMenuItem";
-            this.видToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
+            this.видToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.видToolStripMenuItem.Text = "[view]";
             // 
             // scrollbarsToolStripMenuItem
@@ -189,7 +193,7 @@ namespace Special_KeyCoder
             this.scrollbarsToolStripMenuItem.CheckOnClick = true;
             this.scrollbarsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.scrollbarsToolStripMenuItem.Name = "scrollbarsToolStripMenuItem";
-            this.scrollbarsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.scrollbarsToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.scrollbarsToolStripMenuItem.Text = "Scrollbars";
             this.scrollbarsToolStripMenuItem.CheckedChanged += new System.EventHandler(this.scrollbarsToolStripMenuItem_CheckedChanged);
             // 
@@ -197,10 +201,50 @@ namespace Special_KeyCoder
             // 
             this.примерыToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.примерыToolStripMenuItem.Name = "примерыToolStripMenuItem";
-            this.примерыToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.примерыToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.примерыToolStripMenuItem.Text = "[examples]";
             this.примерыToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.примерыToolStripMenuItem.Click += new System.EventHandler(this.примерыToolStripMenuItem_Click);
+            // 
+            // laToolStripMenuItem
+            // 
+            this.laToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.русскийToolStripMenuItem,
+            this.englishToolStripMenuItem,
+            this.中文ToolStripMenuItem,
+            this.françaisToolStripMenuItem});
+            this.laToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.laToolStripMenuItem.Name = "laToolStripMenuItem";
+            this.laToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.laToolStripMenuItem.Text = "|language|";
+            // 
+            // русскийToolStripMenuItem
+            // 
+            this.русскийToolStripMenuItem.Name = "русскийToolStripMenuItem";
+            this.русскийToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.русскийToolStripMenuItem.Text = "Русский";
+            this.русскийToolStripMenuItem.Click += new System.EventHandler(this.русскийToolStripMenuItem_Click);
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.englishToolStripMenuItem.Text = "English";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // 中文ToolStripMenuItem
+            // 
+            this.中文ToolStripMenuItem.Name = "中文ToolStripMenuItem";
+            this.中文ToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.中文ToolStripMenuItem.Text = "中文";
+            this.中文ToolStripMenuItem.Click += new System.EventHandler(this.中文ToolStripMenuItem_Click);
+            // 
+            // françaisToolStripMenuItem
+            // 
+            this.françaisToolStripMenuItem.Name = "françaisToolStripMenuItem";
+            this.françaisToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.françaisToolStripMenuItem.Text = "Français";
+            this.françaisToolStripMenuItem.Click += new System.EventHandler(this.françaisToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
@@ -211,10 +255,10 @@ namespace Special_KeyCoder
             this.guna2Panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.guna2Panel1.Controls.Add(this.button1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 619);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 503);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1016, 30);
+            this.guna2Panel1.Size = new System.Drawing.Size(762, 24);
             this.guna2Panel1.TabIndex = 13;
             // 
             // button1
@@ -225,9 +269,9 @@ namespace Special_KeyCoder
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.YellowGreen;
             this.button1.Location = new System.Drawing.Point(0, -2);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(349, 30);
+            this.button1.Size = new System.Drawing.Size(262, 24);
             this.button1.TabIndex = 0;
             this.button1.Text = "[noInfoAboutPath]";
             this.button1.UseVisualStyleBackColor = false;
@@ -236,10 +280,10 @@ namespace Special_KeyCoder
             // 
             this.panel1.Controls.Add(this.splitContainer1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 28);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1016, 591);
+            this.panel1.Size = new System.Drawing.Size(762, 479);
             this.panel1.TabIndex = 14;
             // 
             // splitContainer1
@@ -247,7 +291,7 @@ namespace Special_KeyCoder
             this.splitContainer1.BackColor = System.Drawing.Color.SteelBlue;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -257,8 +301,9 @@ namespace Special_KeyCoder
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.documentMap1);
-            this.splitContainer1.Size = new System.Drawing.Size(1016, 591);
-            this.splitContainer1.SplitterDistance = 856;
+            this.splitContainer1.Size = new System.Drawing.Size(762, 479);
+            this.splitContainer1.SplitterDistance = 642;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 0;
             // 
             // fastColoredTextBox1
@@ -278,32 +323,34 @@ namespace Special_KeyCoder
             this.autocompleteMenu1.SetAutocompleteMenu(this.fastColoredTextBox1, this.autocompleteMenu1);
             this.fastColoredTextBox1.AutoIndentCharsPatterns = "^\\s*[\\w\\.]+(\\s\\w+)?\\s*(?<range>=)\\s*(?<range>[^;=]+);\r\n^\\s*(case|default)\\s*[^:]*" +
     "(?<range>:)\\s*(?<range>[^;]+);";
-            this.fastColoredTextBox1.AutoScrollMinSize = new System.Drawing.Size(31, 18);
+            this.fastColoredTextBox1.AutoScrollMinSize = new System.Drawing.Size(27, 14);
             this.fastColoredTextBox1.BackBrush = null;
             this.fastColoredTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.fastColoredTextBox1.CharHeight = 18;
-            this.fastColoredTextBox1.CharWidth = 10;
+            this.fastColoredTextBox1.CharHeight = 14;
+            this.fastColoredTextBox1.CharWidth = 8;
             this.fastColoredTextBox1.CommentPrefix = "#*";
             this.fastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.fastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.fastColoredTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fastColoredTextBox1.FoldingIndicatorColor = System.Drawing.Color.DodgerBlue;
+            this.fastColoredTextBox1.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.fastColoredTextBox1.ForeColor = System.Drawing.Color.White;
             this.fastColoredTextBox1.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.fastColoredTextBox1.IsReplaceMode = false;
             this.fastColoredTextBox1.LineNumberColor = System.Drawing.Color.DodgerBlue;
             this.fastColoredTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.fastColoredTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.fastColoredTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.fastColoredTextBox1.Name = "fastColoredTextBox1";
             this.fastColoredTextBox1.Paddings = new System.Windows.Forms.Padding(0);
             this.fastColoredTextBox1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.fastColoredTextBox1.ServiceColors = null;
             this.fastColoredTextBox1.ServiceLinesColor = System.Drawing.Color.SlateGray;
             this.fastColoredTextBox1.ShowScrollBars = false;
-            this.fastColoredTextBox1.Size = new System.Drawing.Size(856, 591);
+            this.fastColoredTextBox1.Size = new System.Drawing.Size(642, 479);
             this.fastColoredTextBox1.TabIndex = 13;
             this.fastColoredTextBox1.Zoom = 100;
             this.fastColoredTextBox1.TextChanged += new System.EventHandler<FastColoredTextBoxNS.TextChangedEventArgs>(this.fastColoredTextBox1_TextChanged);
+           // this.fastColoredTextBox1.Load += new System.EventHandler(this.fastColoredTextBox1_Load);
             // 
             // documentMap1
             // 
@@ -311,10 +358,10 @@ namespace Special_KeyCoder
             this.documentMap1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.documentMap1.ForeColor = System.Drawing.Color.Maroon;
             this.documentMap1.Location = new System.Drawing.Point(0, 0);
-            this.documentMap1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.documentMap1.Margin = new System.Windows.Forms.Padding(2);
             this.documentMap1.Name = "documentMap1";
             this.documentMap1.Scale = 0.75F;
-            this.documentMap1.Size = new System.Drawing.Size(156, 591);
+            this.documentMap1.Size = new System.Drawing.Size(117, 479);
             this.documentMap1.TabIndex = 3;
             this.documentMap1.Target = this.fastColoredTextBox1;
             this.documentMap1.Text = "fffffff";
@@ -329,24 +376,17 @@ namespace Special_KeyCoder
             this.autocompleteMenu1.MinFragmentLength = 1;
             this.autocompleteMenu1.TargetControlWrapper = null;
             // 
-            // laToolStripMenuItem
-            // 
-            this.laToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.laToolStripMenuItem.Name = "laToolStripMenuItem";
-            this.laToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
-            this.laToolStripMenuItem.Text = "|language|";
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 649);
+            this.ClientSize = new System.Drawing.Size(762, 527);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Special Key Coder IDE";
             this.Activated += new System.EventHandler(this.Form1_Activated);
@@ -392,6 +432,10 @@ namespace Special_KeyCoder
         private System.Windows.Forms.ToolStripMenuItem scrollbarsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem примерыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem laToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem русскийToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 中文ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem françaisToolStripMenuItem;
     }
 }
 

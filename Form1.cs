@@ -57,6 +57,7 @@ namespace Special_KeyCoder
             видToolStripMenuItem.Text = bs.view;
             примерыToolStripMenuItem.Text = bs.examples;
             button1.Text = bs.noInfoAboutPath;
+            laToolStripMenuItem.Text = bs.launge;
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -115,7 +116,7 @@ namespace Special_KeyCoder
             try
             {
                 e.ChangedRange.ClearFoldingMarkers();
-               // e.ChangedRange.SetFoldingMarkers("{", "}");
+                //e.ChangedRange.SetFoldingMarkers("{", "}");
 
                 e.ChangedRange.SetStyle(GreenStyle, @"#.*$");
 
@@ -226,6 +227,30 @@ namespace Special_KeyCoder
         private void примерыToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/TiM-SyStEm/Special-Key-SPS/tree/main/examples");
+        }
+
+        private void русскийToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText("SaveLangIs.txt", "ru");
+            Application.Restart();
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText("SaveLangIs.txt", "en");
+            Application.Restart();
+        }
+
+        private void 中文ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText("SaveLangIs.txt", "ch-si");
+            Application.Restart();
+        }
+
+        private void françaisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText("SaveLangIs.txt", "fr");
+            Application.Restart();
         }
     }
 }
