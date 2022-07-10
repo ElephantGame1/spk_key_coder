@@ -58,6 +58,8 @@ namespace Special_KeyCoder
             примерыToolStripMenuItem.Text = bs.examples;
             button1.Text = bs.noInfoAboutPath;
             laToolStripMenuItem.Text = bs.launge;
+
+            fastColoredTextBox1.Text = File.ReadAllText("codeRestart.txt");
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -232,24 +234,35 @@ namespace Special_KeyCoder
         private void русскийToolStripMenuItem_Click(object sender, EventArgs e)
         {
             File.WriteAllText("SaveLangIs.txt", "ru");
+            File.WriteAllText("codeRestart.txt", fastColoredTextBox1.Text);
             Application.Restart();
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             File.WriteAllText("SaveLangIs.txt", "en");
+            File.WriteAllText("codeRestart.txt", fastColoredTextBox1.Text);
             Application.Restart();
         }
 
         private void 中文ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             File.WriteAllText("SaveLangIs.txt", "ch-si");
+            File.WriteAllText("codeRestart.txt", fastColoredTextBox1.Text);
             Application.Restart();
         }
 
         private void françaisToolStripMenuItem_Click(object sender, EventArgs e)
         {
             File.WriteAllText("SaveLangIs.txt", "fr");
+            File.WriteAllText("codeRestart.txt", fastColoredTextBox1.Text);
+            Application.Restart();
+        }
+
+        private void українськийToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText("SaveLangIs.txt", "ua");
+            File.WriteAllText("codeRestart.txt", fastColoredTextBox1.Text);
             Application.Restart();
         }
     }

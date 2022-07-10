@@ -49,6 +49,7 @@ namespace Special_KeyCoder
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.中文ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.françaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.українськийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
@@ -78,11 +79,11 @@ namespace Special_KeyCoder
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.runToolStripMenuItem,
+            this.laToolStripMenuItem,
             this.документацияToolStripMenuItem,
             this.отчётToolStripMenuItem,
             this.видToolStripMenuItem,
-            this.примерыToolStripMenuItem,
-            this.laToolStripMenuItem});
+            this.примерыToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
@@ -148,7 +149,7 @@ namespace Special_KeyCoder
             this.runConsoleToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.runConsoleToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.runConsoleToolStripMenuItem.Name = "runConsoleToolStripMenuItem";
-            this.runConsoleToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.runConsoleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.runConsoleToolStripMenuItem.Text = "[runConsole]";
             this.runConsoleToolStripMenuItem.Click += new System.EventHandler(this.runConsoleToolStripMenuItem_Click);
             // 
@@ -158,7 +159,7 @@ namespace Special_KeyCoder
             this.peToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.peToolStripMenuItem.Name = "peToolStripMenuItem";
             this.peToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.peToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.peToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.peToolStripMenuItem.Text = "[runCompiling]";
             this.peToolStripMenuItem.Click += new System.EventHandler(this.peToolStripMenuItem_Click);
             // 
@@ -212,7 +213,8 @@ namespace Special_KeyCoder
             this.русскийToolStripMenuItem,
             this.englishToolStripMenuItem,
             this.中文ToolStripMenuItem,
-            this.françaisToolStripMenuItem});
+            this.françaisToolStripMenuItem,
+            this.українськийToolStripMenuItem});
             this.laToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.laToolStripMenuItem.Name = "laToolStripMenuItem";
             this.laToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
@@ -220,31 +222,48 @@ namespace Special_KeyCoder
             // 
             // русскийToolStripMenuItem
             // 
+            this.русскийToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
+            this.русскийToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.русскийToolStripMenuItem.Name = "русскийToolStripMenuItem";
-            this.русскийToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.русскийToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.русскийToolStripMenuItem.Text = "Русский";
             this.русскийToolStripMenuItem.Click += new System.EventHandler(this.русскийToolStripMenuItem_Click);
             // 
             // englishToolStripMenuItem
             // 
+            this.englishToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
+            this.englishToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.englishToolStripMenuItem.Text = "English";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // 中文ToolStripMenuItem
             // 
+            this.中文ToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
+            this.中文ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.中文ToolStripMenuItem.Name = "中文ToolStripMenuItem";
-            this.中文ToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.中文ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.中文ToolStripMenuItem.Text = "中文";
             this.中文ToolStripMenuItem.Click += new System.EventHandler(this.中文ToolStripMenuItem_Click);
             // 
             // françaisToolStripMenuItem
             // 
+            this.françaisToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
+            this.françaisToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.françaisToolStripMenuItem.Name = "françaisToolStripMenuItem";
-            this.françaisToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.françaisToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.françaisToolStripMenuItem.Text = "Français";
             this.françaisToolStripMenuItem.Click += new System.EventHandler(this.françaisToolStripMenuItem_Click);
+            // 
+            // українськийToolStripMenuItem
+            // 
+            this.українськийToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
+            this.українськийToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.українськийToolStripMenuItem.Name = "українськийToolStripMenuItem";
+            this.українськийToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.українськийToolStripMenuItem.Text = "Український";
+            this.українськийToolStripMenuItem.Click += new System.EventHandler(this.українськийToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
@@ -350,7 +369,6 @@ namespace Special_KeyCoder
             this.fastColoredTextBox1.TabIndex = 13;
             this.fastColoredTextBox1.Zoom = 100;
             this.fastColoredTextBox1.TextChanged += new System.EventHandler<FastColoredTextBoxNS.TextChangedEventArgs>(this.fastColoredTextBox1_TextChanged);
-           // this.fastColoredTextBox1.Load += new System.EventHandler(this.fastColoredTextBox1_Load);
             // 
             // documentMap1
             // 
@@ -436,6 +454,7 @@ namespace Special_KeyCoder
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 中文ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem françaisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem українськийToolStripMenuItem;
     }
 }
 
