@@ -31,7 +31,7 @@ namespace Special_KeyCoder
 
         public int tabIndexB = 0;
 
-        public Form1()
+        public Form1(string filePach)
         {
             InitializeComponent();
             if (File.ReadAllText("SaveLangIs.txt") == "")
@@ -65,6 +65,11 @@ namespace Special_KeyCoder
 
             fastColoredTextBox1.Text = File.ReadAllText("codeRestart.txt");
             File.WriteAllText("CodesB\\1.txt", "");
+
+            if (filePach.Length > 0)
+            {
+                fastColoredTextBox1.Text = File.ReadAllText(filePach, Encoding.UTF8);
+            }
 
         }
 
